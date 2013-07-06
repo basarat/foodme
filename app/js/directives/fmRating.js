@@ -10,7 +10,10 @@ foodMeApp.directive('fmRating', function() {
     },
     require: 'ngModel',
     link: function(scope, element, attrs, ngModel) {
-
+      
+      // Move scope to parent for isloate scope ngModels 
+      ngModel.$setScope(scope.$parent);
+      
       attrs.max = scope.max = parseInt(scope.max || 5, 10);
 
       if (!attrs.symbol) {

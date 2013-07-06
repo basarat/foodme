@@ -11654,6 +11654,20 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
         ' (' + startingTag($element) + ')');
   }
 
+   /**
+   * @ngdoc function
+   * @name ng.directive:ngModel.NgModelController#setScope
+   * @methodOf ng.directive:ngModel.NgModelController
+   *
+   * @description
+   * Sets the scope where the attr.ngModel expression has be getted/setted
+   * Useful for directives with isolate scopes where ngModel expresion 
+   * should be evaluated from the parent scope
+   */  
+  this.$setScope = function(context) {
+     $scope = context;
+   }
+
   /**
    * @ngdoc function
    * @name ng.directive:ngModel.NgModelController#$render
