@@ -11656,7 +11656,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
 
    /**
    * @ngdoc function
-   * @name ng.directive:ngModel.NgModelController#setScope
+   * @name ng.directive:ngModel.NgModelController#$setScope
    * @methodOf ng.directive:ngModel.NgModelController
    *
    * @description
